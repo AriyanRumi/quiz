@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Josefin+Sans:wght@300;400&family=Lato:ital,wght@0,300;0,700;1,300&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="wrapper">
+    <div class="inner">
+        <div class="quizSection">
+          <div class="menuBox">
+
+            <button class="dark">
+              <i id='sun' class="fa fa-sun"></i>
+              <i id="moon" class="fa fa-moon"></i>
+            </button>
+  
+            <h3>Wrong:</h3><div class="wrong"> 0</div>
+            <h3>Correct:</h3><div class="right"> 0</div>
+            <h3>Total:</h3><div class="total"> </div>
+            
+          </div>
+  
+          <h2 class="question"><!-- Data will loaded from json --></h2>
+  
+  
+          <div class="questionSection">
+            
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="ans1" class="answer">
+               <label for="ans1" class="option1"> <!-- Data will loaded from json -->
+              </label>
+            </li>
+  
+            <li>
+              <input type="radio" name="answer" id="ans2" class="answer">
+              <label for="ans2" class="option2"><!-- Data will loaded from json --></label>
+            </li>
+  
+            <li>
+              <input type="radio" name="answer" id="ans3" class="answer">
+              <label for="ans3" class="option3"><!-- Data will loaded from json --></label>
+            </li>
+  
+            <li>
+              <input type="radio" name="answer" id="ans4" class="answer">
+              <label for="ans4" class="option4"><!-- Data will loaded from json --></label>
+            </li>
+          </ul>
+  
+          <button class="submit" id="btn1">Next</button>
+  
+          </div>
+        </div>
+
+
+        <div class="scoreSection">
+          <h1>Congratulation Sir</h1>
+          <h2>You Got 4 out of 6</h2>
+          <button>Play Again</button>
+        </div>
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<audio id="pop" src="pop.wav"></audio>
+<script src="index.js"></script>
+</body>
+</html>
